@@ -28,6 +28,7 @@
             "style": "kebab-case"
           }
         ],
+        "@typescript-eslint/no-inferrable-types": "warn",
         "no-console": "off",
         // "no-extra-parens": ["warn", "all"],
         "array-callback-return": "error",
@@ -36,7 +37,7 @@
         "eqeqeq": ["error", "always"],
         "guard-for-in": "warn",
         "no-caller": "error",
-        "no-empty-function": "error",
+        // "no-empty-function": "error",
         "no-eval": "error",
         "no-extra-bind": "error",
         "no-floating-decimal": "error",
@@ -103,10 +104,18 @@
     {
       "files": ["*.html"],
       "extends": [
-        "plugin:@angular-eslint/template/recommended",
-        "plugin:prettier/recommended"
+        "plugin:@angular-eslint/template/recommended"
+        // "plugin:prettier/recommended"
       ],
-      "rules": {}
+      "rules": {
+        // "prettier/prettier": [
+        //   "error",
+        //   {
+        //     "endOfLine": "auto"
+        //     // "printWidth": 120
+        //   }
+        // ]
+      }
     }
   ]
 }
