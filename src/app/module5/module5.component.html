@@ -1,0 +1,19 @@
+<div class="container">
+  <!-- <app-module5-cockpit (serverCreated)="onServerAdded($event)" (blueprintCreated)="onBlueprintAdded($event)">
+  </app-module5-cockpit> -->
+  <hr>
+  <div class="row">
+    <div class="col-xs-12">
+      <!-- <app-module5-server-element *ngFor="let serverElement of serverElements" [name]="serverElement.name">
+        <p #contentParagraph>
+          <strong *ngIf="serverElement.type === 'server'" style="color: red">{{ serverElement.content }}</strong>
+          <em *ngIf="serverElement.type === 'blueprint'">{{ serverElement.content }}</em>
+        </p>
+      </app-module5-server-element> -->
+      <app-module5-assignment-game-control (timerValueOutput)="onTimerOutput($event)">
+      </app-module5-assignment-game-control>
+      <app-module5-assignment-odd *ngFor="let odd of odds" [time]="odd"></app-module5-assignment-odd>
+      <app-module5-assignment-even *ngFor="let even of evens" [time]="even"></app-module5-assignment-even>
+    </div>
+  </div>
+</div>

@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-servers',
-  templateUrl: './servers.component.html',
-  styleUrls: ['./servers.component.css'],
+  selector: 'app-module2-servers',
+  templateUrl: './module2-servers.component.html',
+  styleUrls: ['./module2-servers.component.css'],
 })
-export class ServersComponent {
+export class Module2ServersComponent {
   serverID: number = Math.trunc(Math.random() * 100);
   serverStatus: string = 'offline';
 
