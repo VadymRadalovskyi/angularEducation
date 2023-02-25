@@ -5,4 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: './my-project.component.html',
   styleUrls: ['./my-project.component.css'],
 })
-export class MyProjectComponent {}
+export class MyProjectComponent {
+  activeTab: string = 'recipesTab';
+  onChangeActiveTab(activeTab: string) {
+    this.activeTab = activeTab;
+  }
+}
